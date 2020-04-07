@@ -1,0 +1,13 @@
+node_modules
+*.bak
+*.orig
+.npmrc
+automation/www/Tests.Tags/output/results/
+automation/www/Tests.Tags/output/test/
+automation/www/Tests.Tags/smoketests/output/
+automation/www/Tests.Tags/regression/output/
+automation/www/Tests.Tags/package-lock.json
+yarn.lock*
+src/www/stats.json
+*.DS_Store
+.vscode*
