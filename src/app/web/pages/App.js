@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader/root';
 
 class App extends Component {
   constructor(props) {
@@ -7,8 +8,8 @@ class App extends Component {
   }
 
   render () {
-    return <div title="Hello from React webpack">Hello</div>;
+    return <div>Hi</div>;
   }
 }
 
-export default App;
+export default hot(App);

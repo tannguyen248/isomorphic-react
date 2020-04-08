@@ -2,13 +2,13 @@ import React from 'react';
 import { render, hydrate } from 'react-dom';
 import App from './pages/App';
 
-const root = document.querySelector('#root');
+const root = document.getElementById('root');
 
-const Appli = () => {
-  return <div>a</div>
-}
-render(<Appli />, document.getElementById('root'));
+render(<App />, root);
 
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept('./pages/App.js', () => {
+    const NextApp = require('./pages/App.js').default;
+    render(<NextApp />, root);
+  });
 }
