@@ -12,7 +12,7 @@ module.exports = merge(webconfig, {
     publicPath: `${process.env.PUBLIC_URL || ''}/static/`,
   },
   devServer: {
-    contentBase: './dist/web',
+    contentBase: path.resolve(__dirname, 'dist/web'),
     hot: true
   },
   watchOptions: {
